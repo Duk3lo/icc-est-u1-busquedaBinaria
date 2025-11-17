@@ -1,5 +1,5 @@
 package view;
-import models.Persona;
+import model.Persona;
 
 public class ShowConsole {
 

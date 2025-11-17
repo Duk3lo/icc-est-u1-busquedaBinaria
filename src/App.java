@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 import controllers.BusquedaBinaria;
@@ -10,7 +9,7 @@ public class App {
     public static void main(String[] args) {
 
         // Datos
-        int[] numeros = { 1, 3, 5, 7, 9, 11 };
+        int[] numeros = { 5, 4, 7, 3, 9, 11, 20 };
         Arrays.sort(numeros);
 
         Persona[] personas = {

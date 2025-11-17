@@ -1,18 +1,82 @@
-## Getting Started
+# Búsqueda Binaria -- MVC
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Estudiante:** Joshue Avecillas
 
-## Folder Structure
+## Práctica -- 17/nov
 
-The workspace contains two folders by default, where:
+Implementación de búsqueda binaria y búsqueda de personas utilizando
+arquitectura **MVC** en Java.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+------------------------------------------------------------------------
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Componentes del Proyecto
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### **Modelo**
 
-## Dependency Management
+-   `Persona`\
+    Clase que representa a una persona con los atributos **nombre** y
+    **edad**.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### **Controladores**
+
+-   `BusquedaBinaria`\
+    Implementa el algoritmo de búsqueda binaria para arreglos de enteros
+    ordenados.
+
+-   `PersonaController`\
+    Permite buscar una persona por su nombre dentro de un arreglo de
+    objetos `Persona`.
+
+### **Vista**
+
+-   `ShowConsole`\
+    Muestra en consola los resultados de las búsquedas realizadas.
+
+------------------------------------------------------------------------
+
+## Ejecución del Programa
+
+### **Búsqueda binaria de números**
+
+Determina si un valor entero se encuentra dentro de un arreglo ordenado.
+
+### **Búsqueda de personas por nombre**
+
+Retorna e imprime los datos de la persona encontrada.\
+Si no existe, muestra un mensaje indicándolo.
+
+------------------------------------------------------------------------
+
+## Estructura del Proyecto
+
+    src/
+     ├── model/
+     │    └── Persona.java
+     ├── controller/
+     │    ├── BusquedaBinaria.java
+     │    └── PersonaController.java
+     ├── view/
+     │    └── ShowConsole.java
+     └── App.java
+
+------------------------------------------------------------------------
+
+## Ejemplo de Salida
+
+### Resultado búsqueda binaria
+
+![Búsqueda Binaria](assets/binaria.png)
+
+### Resultado búsqueda de persona
+
+![Búsqueda Persona](assets/persona.png)
+
+------------------------------------------------------------------------
+
+## Descripción General
+
+Este proyecto demuestra cómo aplicar el patrón
+**Modelo--Vista--Controlador** en una práctica sencilla de búsqueda de
+datos.\
+Incluye tanto lógica algorítmica (búsqueda binaria) como manejo de
+objetos con Java.

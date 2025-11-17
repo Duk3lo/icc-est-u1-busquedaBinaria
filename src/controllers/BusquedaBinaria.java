@@ -1,4 +1,5 @@
 package controllers;
+
 public class BusquedaBinaria {
 
     public boolean buscadaNumero(int[] numeros, int valor) {
@@ -19,4 +20,5 @@ public class BusquedaBinaria {
 
         return false;
     }
+
 }

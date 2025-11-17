@@ -1,16 +1,29 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+import controllers.BusquedaBinaria;
 import controllers.PersonaController;
-import models.Persona;
+import model.Persona;
+import view.ShowConsole;
 
 public class App {
     public static void main(String[] args) {
 
         // Datos
         int[] numeros = { 1, 3, 5, 7, 9, 11 };
+        Arrays.sort(numeros);
+
         Persona[] personas = {
-                new Persona("Ana", 20),
-                new Persona("Luis", 25),
-                new Persona("Carlos", 30)
+                new Persona("Juan", 25),
+                new Persona("Ana", 30),
+                new Persona("Pedro", 20),
+                new Persona("Maria", 28),
+                new Persona("Luis", 22),
+                new Persona("Carmen", 37),
+                new Persona("Sofia", 24)
         };
+
+        Arrays.sort(personas, (p1, p2) -> p1.getNombre().compareTo(p2.getNombre()));
 
         BusquedaBinaria bb = new BusquedaBinaria();
         PersonaController pc = new PersonaController();

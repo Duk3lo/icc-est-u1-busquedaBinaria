@@ -35,7 +35,7 @@ public class App {
 
         // Prueba búsqueda de persona
         String nombre = "Luis";
-        Persona pEncontrada = pc.findByName(personas, nombre);
+        Persona pEncontrada = pc.buscarPersonaBinaria(personas, nombre);
         vista.showPersonResult(pEncontrada, nombre);
     }
 }
